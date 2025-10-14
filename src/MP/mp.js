@@ -4,7 +4,7 @@ import Footer from "./footer";
 import { FiEye } from "react-icons/fi";
 import { BsCheckCircle, BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
+// these impoorts ahhh
 const Mp = () => {
   const [todos, setTodos] = useState([]);
   const [completed, setCompleted] = useState([]);
@@ -19,7 +19,7 @@ const Mp = () => {
         : Array(storedTodos.length).fill(false)
     );
   }, []);
-
+  // ahhh this much to do this simple effect :(
   useEffect(() => {
     localStorage.setItem("completed", JSON.stringify(completed));
   }, [completed]);

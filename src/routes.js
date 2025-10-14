@@ -12,6 +12,7 @@ const AppRoutes = () => {
       <Route path="/home" element={<Mp />}></Route>
       <Route path="/add" element={<Td />}></Route>
       <Route path="/view/:id" element={<View />} />
+
       <Route path="/log" element={<Log />} exact />
 
       <Route path="*" element={<NotFound />} />

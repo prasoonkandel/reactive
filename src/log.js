@@ -180,8 +180,6 @@ const Log = () => {
               Jay Shree Ram <br />
               Jay Shree Ram <br />
               Jay Shree Ram <br />
-              Jay Shree Ram <br />
-              Jay Shree Ram <br />
             </>
           }
         ></Route>
