@@ -24,6 +24,19 @@ const Mp = () => {
     localStorage.setItem("completed", JSON.stringify(completed));
   }, [completed]);
 
+  useEffect(() => {
+    if (todos.length !== completed.length) {
+      if (todos.length > completed.length) {
+        setCompleted([
+          ...completed,
+          ...Array(todos.length - completed.length).fill(false),
+        ]);
+      } else {
+        // Remove entries for deleted todos
+        setCompleted(completed.slice(0, todos.length));
+      }
+    }
+  }, [todos, completed]);
   const handleCheck = (index) => {
     const updated = [...completed];
     updated[index] = !updated[index];
