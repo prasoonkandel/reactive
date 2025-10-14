@@ -3,7 +3,7 @@ const NAVBAR = () => {
   return (
     <>
       <div className="nav_bar">
-        <div className="version">TO DO V2</div>
+        <div className="version">To Do APP</div>
         <div className="menu_items">
           <Link to="/">
             <div>HOME</div>
@@ -12,7 +12,7 @@ const NAVBAR = () => {
             <div>ADD TODO</div>
           </Link>
           <Link to="/log">
-            <div>LOG-IN</div>
+            <div>LOG IN</div>
           </Link>
         </div>
       </div>

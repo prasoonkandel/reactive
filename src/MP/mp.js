@@ -9,7 +9,6 @@ const Mp = () => {
   const [todos, setTodos] = useState([]);
   const [completed, setCompleted] = useState([]);
 
-  // Load todos and completed state from localStorage
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem("todo")) || [];
     const storedCompleted = JSON.parse(localStorage.getItem("completed")) || [];
@@ -21,7 +20,6 @@ const Mp = () => {
     );
   }, []);
 
-  // Save completed state in localStorage whenever changed
   useEffect(() => {
     localStorage.setItem("completed", JSON.stringify(completed));
   }, [completed]);
