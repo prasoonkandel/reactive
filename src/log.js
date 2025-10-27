@@ -2,7 +2,6 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import NAVBAR from "./MP/navbar";
 import Footer from "./MP/footer";
 import React from "react";
-import { BiColor } from "react-icons/bi";
 
 const Log = () => {
   const nav = useNavigate();

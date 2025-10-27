@@ -7,3 +7,6 @@
   --border-color: #1f2d3d; /* subtle dark border */
   --accent-color: #38bdf8; /* bright cyan accent for actions */
 }
+* {
+  font-family: "nunito", sans-serif;
+}

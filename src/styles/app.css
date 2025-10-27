@@ -1,9 +1,8 @@
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
 a {
   text-decoration: none;
+}
+* {
+  font-family: "nunito", sans-serif;
 }
 
 body {
@@ -18,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .menu_items {
@@ -74,7 +73,9 @@ button {
   justify-content: space-between;
 }
 .gang {
-  font-family: "Gang of Three", sans-serif;
+  font-family: "Mozilla Headline", sans-serif;
+  color: black;
+  font-size: 32px;
 }
 .page {
   margin: 10px;
@@ -122,4 +123,26 @@ button {
 }
 .creator-button {
   background: #007bff;
+}
+
+.todo_form input {
+  min-width: 500px;
+
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.todo_form button {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.todo_form button:active {
+  background-color: #d62a0f;
+}
+
+@media (max-width: 800px) {
+  .todo_form input {
+    min-width: 300px;
+  }
 }
